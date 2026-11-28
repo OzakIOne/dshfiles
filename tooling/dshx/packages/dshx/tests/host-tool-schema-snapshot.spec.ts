@@ -12,7 +12,7 @@ import { resolveDshxConfig } from '../src/config/resolve.js'
 import { decodeJson, jsonValueSchema, type JsonObject, type JsonValue } from '../src/json.js'
 import { createTestHost } from '../src/testing/index.js'
 
-const expectedCounts = { hostBundles: 90, apiMethods: 704, apiToolBindings: 498, apiToolSchemas: 497, definedTools: 26, tools: 523 }
+const expectedCounts = { hostBundles: 91, apiMethods: 709, apiToolBindings: 503, apiToolSchemas: 502, definedTools: 26, tools: 528 }
 const fixturePath = new URL('../../../e2e/fixtures/tool-schemas.json', import.meta.url)
 
 const isObjectRecord = (value: JsonValue): value is JsonObject => typeof value === 'object' && value !== null && !Array.isArray(value)

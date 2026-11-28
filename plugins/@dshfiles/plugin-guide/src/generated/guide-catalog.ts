@@ -2372,7 +2372,7 @@ export const GUIDE_CATALOG: GuideCatalog = {
       "publicSymbol": "sessionSearchApi",
       "importFrom": "@dshfiles/session-search/search-api",
       "owner": "@dshfiles/session-search",
-      "source": "plugins/@dshfiles/session-search/src/api.ts:62",
+      "source": "plugins/@dshfiles/session-search/src/api.ts:63",
       "occupancy": "unavailable",
       "occupants": [],
       "key": "api:@dshfiles/session-search:session-search",
@@ -3518,7 +3518,7 @@ export const GUIDE_CATALOG: GuideCatalog = {
         "@dshfiles/activity-timeline › inbox-push"
       ],
       "details": [
-        "Used by 85 catalog feature(s)",
+        "Used by 87 catalog feature(s)",
         "Destinations in use: agents, inbox, knowledge, land, observe, settings, threads, work"
       ],
       "source": "tooling/dshx/packages/dshx/src/project/features.ts",
@@ -3768,7 +3768,7 @@ export const GUIDE_CATALOG: GuideCatalog = {
         "@dshfiles/agent-questions › cross-thread-question-inbox"
       ],
       "details": [
-        "Used by 19 catalog feature(s)",
+        "Used by 20 catalog feature(s)",
         "Destinations in use: inbox"
       ],
       "source": "tooling/dshx/packages/dshx/src/project/features.ts",

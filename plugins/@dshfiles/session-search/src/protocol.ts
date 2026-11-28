@@ -3,6 +3,7 @@ import { Rpc, RpcGroup } from 'effect/rpc'
 
 import {
   FIND_LIMIT_MAX,
+  findEventTypesSchema,
   findMatchSchema,
   indexHealthSchema,
   messageSearchRequestSchema,
@@ -69,6 +70,8 @@ const findInSessionRequestSchema = Schema.Struct({
   limit: Schema.Number.check(Schema.isFinite(), Schema.isInt(), Schema.isGreaterThanOrEqualTo(1), Schema.isLessThanOrEqualTo(FIND_LIMIT_MAX)),
   /** The newest `limit` matches instead of the oldest, still handed back in seq order. */
   newest: Schema.optional(Schema.Boolean),
+  /** Optional event types to keep (ORed); absent matches every indexed event type. */
+  types: Schema.optional(findEventTypesSchema),
 })
 export type FindInSessionRequest = typeof findInSessionRequestSchema.Type
 
